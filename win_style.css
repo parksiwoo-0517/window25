@@ -1,0 +1,708 @@
+body {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	text-align: center;
+	padding: 1%;
+}
+.footerft {
+	position: fixed;
+	top: -1%;
+	left: 1%;
+	z-index: 9999;
+	font-size: 11px;
+	color: grey;
+	pointer-events: none;
+}
+.windowcontainer {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  aspect-ratio: 16 / 10; 
+}
+
+.windowcontainer a {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.back {
+	position: fixed;
+	bottom:-1%;
+	left: 2%;
+	font-size: 200%;
+
+}
+.text {
+	position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    font-size: 100%;
+}
+
+.win01 {
+	position: absolute;
+	width: 11%;
+	left: 1.2%;
+	top: 0%;
+	aspect-ratio: 1/2;
+	background-image: url("images/1c.jpeg");
+}
+.win01:hover {
+    background-image: url("images/1o.jpeg");
+}
+
+.dow01 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/1o.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dow01:hover {
+	background-image: url("images/ii.jpeg");
+
+}
+
+.win02 {
+	position: absolute;
+	width: 11%;
+	left: 1.2%;
+	top: 29.5%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/2c.jpeg");
+}
+.win02:hover {
+    background-image: url("images/2o.jpeg");
+}
+.dow02 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%,-50%);
+	background-image: url("images/2c.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+.audio02 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%,-50%);
+	background-image: url("images/2o.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.win03 {
+	position: absolute;
+	width: 24%;
+	left: 1.2%;
+	top: 41.5%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/3c.jpeg");
+}
+.win03:hover {
+    background-image: url("images/3o.jpeg");
+}
+.dow03 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/3c.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.dow03:hover {
+	background-image: url("images/3o.jpeg");
+
+}
+
+.win04 {
+	position: absolute;
+	width: 22%;
+	left: 9.8%;
+	top: 2.85%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/4c.jpeg");
+}
+.win04:hover {
+    background-image: url("images/4o.jpeg");
+}
+.dow04 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 55%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-image: url("images/4c.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+.audio04 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 55%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-image: url("images/4o.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.win05 {
+	position: absolute;
+	width: 40%;
+	left: 29.4%;
+	top: -17.3%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/5c.jpeg");
+}
+.win05:hover {
+    background-image: url("images/5o.jpeg");
+}
+.dow05 {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	aspect-ratio: 16/10;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+}
+.dow05 img {
+	width: 100%;
+	display: block;
+	transform-origin: center center;
+}
+.dow05:hover img {
+	animation: window-shake 0.4s ease-in-out infinite;
+}
+@keyframes window-shake {
+	0% { transform: scale(1) translate(0, 0); }
+	25% { transform: scale(1.01) translate(1px, -1px); }
+	50% { transform: scale(0.995) translate(-1px, 1px); }
+	75% { transform: scale(1.005) translate(1px, 0); }
+	100% { transform: scale(1) translate(0, 0); }
+}
+
+.win06 {
+	position: absolute;
+	width: 16%;
+	left: 83%;
+	top: 19%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/6c.jpeg");
+}
+.win06:hover {
+    background-image: url("images/6o.jpeg");
+}
+.dow06 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/d06.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.d06 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/do06.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.do06 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/6c.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.win07 {
+	position: absolute;
+	width: 25.3%;
+	left: 25.8%;
+	top: 43.6%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/7c.jpeg");
+}
+.win07:hover {
+    background-image: url("images/7o.jpeg");
+}
+.dow07 {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	aspect-ratio: 16/10;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+}
+.dow07 img {
+	width: 50%;
+	display: block;
+	transform-origin: center center;
+}
+.dow07:hover img {
+	animation: window-shake 0.7s ease-in-out infinite;
+}
+@keyframes window-shake {
+	0% { transform: scale(1) translate(0, 0); }
+	25% { transform: scale(1.01) translate(1px, -1px); }
+	50% { transform: scale(0.995) translate(-1px, 1px); }
+	75% { transform: scale(1.005) translate(1px, 0); }
+	100% { transform: scale(1) translate(0, 0); }
+}
+
+.win08 {
+	position: absolute;
+	width: 21%;
+	left: 50%;
+	top: 40.7%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/8c.jpeg");
+}
+.win08:hover {
+    background-image: url("images/8o.jpeg");
+}
+.dow08 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/8c.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dow08:hover {
+	background-image: url("images/color.jpeg");
+
+}
+
+.win09 {
+	position: absolute;
+	width: 29%;
+	left: 70%;
+	top: -13.3%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/9c.jpeg");
+}
+.win09:hover {
+    background-image: url("images/9o.jpeg");
+}
+.dow09 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/9c.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dow09:hover {
+	background-image: url("images/ttt.jpeg");
+
+}
+
+.win10 {
+	position: absolute;
+	width: 14%;
+	left: 68.8%;
+	top: 27%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/10c.jpeg");
+}
+.win10:hover {
+    background-image: url("images/10o.jpeg");
+}
+.dow10 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 52.5%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-image: url("images/10o.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+.audio10 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 52.5%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-image: url("images/10c.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.win11 {
+	position: absolute;
+	width: 7%;
+	left: 82%;
+	top: 41.3%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/11c.jpeg");
+}
+.win11:hover {
+    background-image: url("images/11o.jpeg");
+}
+.dow11 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/11c.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dow11:hover {
+	background-image: url("images/nc.jpeg");
+
+}
+
+.win12 {
+	position: absolute;
+	width: 19%;
+	left: 29.8%;
+	top: 28.7%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/12c.jpeg");
+}
+.win12:hover {
+    background-image: url("images/12o.jpeg");
+}
+.dow12 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/12c.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dow12:hover {
+	background-image: url("images/cat12o.jpeg");
+
+}
+
+.win13 {
+	position: absolute;
+	width: 19%;
+	left: 69.7%;
+	top: 50.8%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/13c.jpeg");
+}
+.win13:hover {
+    background-image: url("images/13o.jpeg");
+}
+.dow13 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/13c.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.dow13:hover {
+	background-image: url("images/13o.jpeg");
+
+}
+
+.win14 {
+	position: absolute;
+	width: 19%;
+	left: 84.65%;
+	top: 44.6%;
+	aspect-ratio: 1/1.2;
+	background-image: url("images/14c.jpeg");
+}
+.win14:hover {
+    background-image: url("images/14o.jpeg");
+}
+.dow14 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/14c.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cat14 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/cat.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cat142 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/cat2.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cat1422 {
+	position: absolute;
+	width: 40%;
+	aspect-ratio: 1/1.2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("images/cat3.jpeg");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		overflow-y: auto;
+	}
+
+	.footerft {
+	position: absolute;
+	top: -1%;
+	left: 1%;
+	z-index: 9999;
+	font-size: 11px;
+	color: grey;
+	pointer-events: none;
+}
+	.win01 {
+		width: 50%;
+		left: 25%;
+		top: 10%;
+	}
+	.win01:active {
+    	background-image: url("images/1o.jpeg");
+	}
+
+	.win02 {
+		width: 50%;
+		left: 25%;
+		top: 150%;
+	}
+	.win02:active {
+    	background-image: url("images/2o.jpeg");
+	}
+
+	.win03 {
+		width: 50%;
+		left: 25%;
+		top: 225%;
+	}
+	.win03:active {
+    	background-image: url("images/3o.jpeg");
+	}
+
+	.win04 {
+		width: 50%;
+		left: 25%;
+		top: 315%;
+	}
+	.win04:active {
+    	background-image: url("images/4o.jpeg");
+	}
+
+	.win05 {
+		width: 50%;
+		left: 25%;
+		top: 393%;
+	}
+	.win05:active {
+    	background-image: url("images/5o.jpeg");
+	}
+	.dow05 img {
+		width: 100% !important;
+	    height: auto !important;
+	    max-height: 40vh !important; 
+	    object-fit: contain !important;
+	    display: block !important;
+	    margin: 0 auto !important;
+	}
+
+	.win06 {
+		width: 50%;
+		left: 25%;
+		top: 445%;
+	}
+	.win06:active {
+    	background-image: url("images/6o.jpeg");
+	}
+
+	.win07 {
+		width: 50%;
+		left: 25%;
+		top: 500%;
+	}
+	.win07:active {
+    	background-image: url("images/7o.jpeg");
+	}
+	.dow07 img {
+		width: 100% !important;
+	    height: auto !important;
+	    max-height: 40vh !important; 
+	    object-fit: contain !important;
+	    display: block !important;
+	    margin: 0 auto !important;
+	}
+
+	.win08 {
+		width: 50%;
+		left: 25%;
+		top: 585%;
+	}
+	.win08:active {
+    	background-image: url("images/8o.jpeg");
+	}
+
+	.win09 {
+		width: 50%;
+		left: 25%;
+		top: 663%;
+	}
+	.win09:active {
+    	background-image: url("images/9o.jpeg");
+	}
+
+	.win10 {
+		width: 50%;
+		left: 25%;
+		top: 740%;
+	}
+	.win10:active {
+    	background-image: url("images/10o.jpeg");
+	}
+
+	.win11 {
+		width: 50%;
+		left: 25%;
+		top: 840%;
+	}
+	.win11:active {
+    	background-image: url("images/11o.jpeg");
+	}
+
+	.win12 {
+		width: 50%;
+		left: 25%;
+		top: 910%;
+	}
+	.win12:active {
+    	background-image: url("images/12o.jpeg");
+	}
+
+	.win13 {
+		width: 50%;
+		left: 25%;
+		top: 970%;
+	}
+	.win13:active {
+    	background-image: url("images/13o.jpeg");
+	}
+
+	.win14 {
+		width: 50%;
+		left: 25%;
+		top: 1060%;
+	}
+	.win14:active {
+    	background-image: url("images/14o.jpeg");
+	}
+
+}
